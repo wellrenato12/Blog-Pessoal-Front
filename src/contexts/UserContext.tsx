@@ -18,7 +18,6 @@ interface UserProviderProps {
 export function UserProvider({ children }: UserProviderProps) {
   const [nome, setNome] = useState('');
 
-
   return (
     <UserContext.Provider value={{ nome, setNome}}>
       {children}

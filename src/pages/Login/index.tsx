@@ -14,10 +14,8 @@ export function Login() {
     {} as UsuarioLogin
   );
 
-  const { usuario, handleLogin } = useContext(AuthContext);
-
-  const {isLoading} = useContext(AuthContext) 
-
+  const { usuario, handleLogin, isLoading } = useContext(AuthContext);
+  
   useEffect(() => {
     if (usuario.token !== "") {
         navigate('/home')

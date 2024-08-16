@@ -12,9 +12,9 @@ import { DeletarTema } from './components/Temas/DeletarTema';
 import { FormularioTema } from './components/Temas/FormularioTema';
 import { ListaTemas } from './components/Temas/ListaTemas';
 import { Cadastro } from './pages/Cadastro';
-import { Home } from './pages/Home/Home';
 import { Perfil } from './pages/perfil/Perfil';
 import { Login } from './pages/Login';
+import { Home } from './pages/Home/Home';
 
 export function App() {
   

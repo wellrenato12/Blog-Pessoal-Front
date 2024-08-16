@@ -21,6 +21,7 @@ export function DeletarTema() {
           'Authorization': token
         }
       })
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       if (error.toString().includes('403')) {
         alert('O token expirou, favor logar novamente')

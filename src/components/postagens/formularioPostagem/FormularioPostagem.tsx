@@ -105,7 +105,6 @@ export function FormularioPostagem() {
         });
         toastAlerta('Postagem atualizada com sucesso', 'sucesso');
         retornar();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         if (error.toString().includes('403')) {
           toastAlerta('O token expirou, favor logar novamente', 'info')
@@ -124,7 +123,6 @@ export function FormularioPostagem() {
 
         toastAlerta('Postagem cadastrada com sucesso', 'sucesso');
         retornar();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         if (error.toString().includes('403')) {
           toastAlerta('O token expirou, favor logar novamente', 'info')

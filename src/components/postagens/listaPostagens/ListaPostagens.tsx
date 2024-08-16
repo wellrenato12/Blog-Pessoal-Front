@@ -29,7 +29,6 @@ export function ListaPostagens() {
           Authorization: token,
         },
       });
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       if (error.toString().includes('403')) {
         toastAlerta('O token expirou, favor logar novamente', 'info')
